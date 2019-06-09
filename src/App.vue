@@ -1,17 +1,37 @@
 <template>
   	<div id="app">
-    	<location />
+    	<Location />
+        <Current /> 
   	</div>
 </template>
 
 <script>
-import Location from './components/Location.vue'
+import { store } from '@/store.js'
+import Location from './components/Location'
+import Current from './components/Current'
 
 export default {
 	name: 'app',
   	components: {
-    	Location
-  	}
+		Location,
+		Current
+	},
+	data () {
+		return {
+            sharedState: store.state
+        }
+    },
+	computed: {
+		coordinates () {
+            return this.sharedState.coordinates
+        }
+    },
+    watch: {
+        coordinates (val) {
+            store.getLocation()
+            store.getWeather()
+        }
+    }
 }
 </script>
 

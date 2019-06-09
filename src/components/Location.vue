@@ -1,7 +1,7 @@
 <template>
-    <div id="location">
+    <div class="location">
         <h1 
-            class="heading1"
+            class="location__heading"
             v-test="{ id: 'location' }"
             v-html="sharedState.currentLocation"></h1>
     </div>
@@ -21,16 +21,17 @@ export default {
     },
     mounted () {
         store.getCoordinates()
-    },
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-#location {
+.location {
     display: flex;
     justify-content: center;
     width: 100%;
-    .heading1 {
+
+    &__heading {
         font-size: 2rem;
         font-size: 20px;
     }
