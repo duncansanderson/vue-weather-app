@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="380" viewBox="0 0 380 380">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="380" height="380" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="58.737" height="58.738" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_3" data-name="Repeat Grid 3" clip-path="url(#clip-path)">
+    <g transform="translate(-272 -140)">
+      <path id="Path_1" data-name="Path 1" d="M1125.1,1174.1a100,100,0,1,1,100-100A100.113,100.113,0,0,1,1125.1,1174.1Zm0-180a80,80,0,1,0,80,80A80.089,80.089,0,0,0,1125.1,994.1Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <path id="Path_2" data-name="Path 2" d="M1125,958a10,10,0,0,1-10-10V894a10,10,0,0,1,20,0v54A10,10,0,0,1,1125,958Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <path id="Path_3" data-name="Path 3" d="M1125,1264a10,10,0,0,1-10-10v-54a10,10,0,0,1,20,0v54A10,10,0,0,1,1125,1264Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <path id="Path_4" data-name="Path 4" d="M999,1084H945a10,10,0,0,1,0-20h54a10,10,0,0,1,0,20Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <path id="Path_5" data-name="Path 5" d="M1305,1084h-54a10,10,0,0,1,0-20h54a10,10,0,0,1,0,20Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(540.542 192.72)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-540.542 -192.72)">
+          <path id="Path_6" data-name="Path 6" d="M1213.542,995.458a10,10,0,0,1-7.071-17.071l38.737-38.738a10,10,0,0,1,14.143,14.143l-38.738,38.737A9.967,9.967,0,0,1,1213.542,995.458Z" transform="translate(-663 -744)" fill="#ffffff"/>
+        </g>
+      </g>
+      <path id="Path_7" data-name="Path 7" d="M997.721,1211.279a10,10,0,0,1-7.072-17.071l38.738-38.737a10,10,0,0,1,14.142,14.142l-38.737,38.738A9.971,9.971,0,0,1,997.721,1211.279Z" transform="translate(-663 -744)" fill="#ffffff"/>
+      <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(324.721 192.72)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-324.721 -192.72)">
+          <path id="Path_8" data-name="Path 8" d="M1036.458,995.458a9.967,9.967,0,0,1-7.071-2.929l-38.738-38.737a10,10,0,0,1,14.143-14.143l38.737,38.738a10,10,0,0,1-7.071,17.071Z" transform="translate(-663 -744)" fill="#ffffff"/>
+        </g>
+      </g>
+      <path id="Path_9" data-name="Path 9" d="M1252.279,1211.279a9.971,9.971,0,0,1-7.071-2.928l-38.737-38.738a10,10,0,0,1,14.142-14.142l38.738,38.737a10,10,0,0,1-7.072,17.071Z" transform="translate(-663 -744)" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

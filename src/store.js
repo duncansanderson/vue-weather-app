@@ -9,6 +9,9 @@ export default new Vuex.Store({
     state: {
         coordinates: [],
         location: null,
+        currentWeather: {},
+        chartLabels: [],
+        chartData:[]
     },
     mutations: {
         GET_COORDINATES(state) {
@@ -41,7 +44,37 @@ export default new Vuex.Store({
                     state.location = city
                 })
                 .catch(error => {
-                    console.log("There was an error:", error.response)
+                    console.log('There was an error getting the location data:', error.response)
+                })
+        },
+        GET_WEATHER(state) {
+            const days = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+
+            service
+                .getWeather(state.coordinates)
+                .then(response => {
+                    
+                    // Set current weather.
+                    state.currentWeather = {
+                        summary: response.data.currently.summary,
+                        icon: response.data.currently.icon,
+                        temperature: Math.round( response.data.currently.temperature ),
+                        temperatureMax: Math.round( response.data.daily.data[0].temperatureMax ),
+                        temperatureMin: Math.round( response.data.daily.data[0].temperatureMin )
+                    }
+
+                    // Set chart data and labels (hourly weather).
+                    response.data.hourly.data.splice(6)
+                    
+                    response.data.hourly.data.forEach(hour => {
+                        state.chartLabels.push(new Date(hour.time * 1000).getHours().toString() + ':00')
+                        state.chartData.push(Math.round(hour.temperature))
+                    })
+
+                    state.chartLabels[0] = 'Now'
+                })
+                .catch(error => {
+                    console.log('There was an error getting the weather data', error.response)
                 })
         }
     },
@@ -51,6 +84,9 @@ export default new Vuex.Store({
         },
         getLocation(context) {
             context.commit('GET_LOCATION')
+        },
+        getWeather(context) {
+            context.commit('GET_WEATHER')
         }
     }
 })

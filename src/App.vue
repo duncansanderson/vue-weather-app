@@ -1,16 +1,19 @@
 <template>
   	<div id="app">
     	<Location />
+        <CurrentWeather />
   	</div>
 </template>
 
 <script>
 import Location from './components/Location'
+import CurrentWeather from './components/CurrentWeather'
 
 export default {
 	name: 'app',
   	components: {
-		Location
+        Location,
+        CurrentWeather
 	},
 }
 </script>
