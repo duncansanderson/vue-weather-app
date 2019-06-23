@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  	<div id="app">
+    	<Location />
+  	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Location from './components/Location'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+	name: 'app',
+  	components: {
+		Location
+	},
 }
 </script>
 
 <style lang="scss">
+* {
+	box-sizing: border-box;
+	font-family: $roboto;
+	font-weight: 300;
+	font-size: 3.25vh;
+}
+
+body {
+	align-items: center;
+	background: #e7e7ef;
+	display: flex;
+	justify-content: center;
+}
+
+html, body {
+	font-size: 62.5%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	background-color: $blue;
+	box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
+	color: $white;
+	height: 100vh;
+  	overflow: hidden;
+  	width: 100vw;
+  
+  	@media (min-width: 576px) {
+    	height: 96vh;
+    	width: 54vh;
+  	}
 }
 </style>
