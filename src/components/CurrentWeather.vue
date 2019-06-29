@@ -8,17 +8,14 @@
         </div>
         <div class="current__temperature">
             <div class="current__temperature__now">
-                {{ currentWeather.temperature }}
-                <span>&deg;c</span>
+                {{ currentWeather.temperature }}<span>&deg;c</span>
             </div>
             <div class="current__temperature__day">
                 <div class="current__temperature__day__max">
-                    {{ currentWeather.temperatureMax }}
-                    <span>&deg;c</span>
+                    {{ currentWeather.temperatureMax }}<span>&deg;c</span>
                 </div>
                 <div class="current__temperature__day__min">
-                    {{ currentWeather.temperatureMin }}
-                    <span>&deg;c</span>
+                    {{ currentWeather.temperatureMin }}<span>&deg;c</span>
                 </div>
             </div>
         </div>
@@ -52,10 +49,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .current {
-    margin-top: 7rem;
-    padding: 0 3.2rem;
+    margin: 0 auto;
+    padding: 0 3rem;
 
     &__summary {
         align-items: center;
@@ -63,6 +60,10 @@ export default {
         height: 3rem;
 
         &__icon {
+            margin-top: 0.3rem;
+            margin-right: 0.5rem;
+            margin-left: 0.7rem;
+
             img {
                 height: 30px;
                 width: 30px;
@@ -70,9 +71,7 @@ export default {
         }
 
         &__text {
-            font-size: 24px;
-            font-size: 2.4rem;
-            margin-left: 1rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -81,30 +80,40 @@ export default {
         display: flex;
 
         &__now {
-            font-size: 80px;
             font-size: 8rem;
+            margin-right: 2.5rem;
+            position: relative;
+
+            span {
+                font-size: 2rem;
+                position: absolute;
+                top: 1.5rem;
+            }
         }
 
         &__day {
-            margin-left: 1rem;
-            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
 
             &__max, &__min {
-                font-size: 2.4rem;
+                font-size: 1.5rem;
+                position: relative;
                 text-align: right;
+
+                span {
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 0.1rem;
+                }
             }
 
             &__max::after {
-                content: '';
-                height: 1px;
-                width: 100%;
                 background-color: $white;
+                content: '';
                 display: block;
+                height: 1px;
+                margin: .2rem 0;
                 position: relative;
-            }
-
-            &__min {
-                padding-top: .2rem;
+                width: 100%;
             }
         }
     }

@@ -34,7 +34,7 @@ body {
 }
 
 html, body {
-	font-size: 62.5%;
+	font-size: 1rem;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -42,16 +42,22 @@ html, body {
 }
 
 #app {
+    // align-items: center;
 	background-color: $blue;
 	box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
-	color: $white;
+    color: $white;
+    // display: flex;
+    // flex-direction: column;
 	height: 100vh;
   	overflow: hidden;
-  	width: 100vw;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
   
   	@media (min-width: 576px) {
-    	height: 96vh;
-    	width: 54vh;
+    	height: 580px;
+    	width: 320px;
   	}
 }
 </style>

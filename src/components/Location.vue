@@ -32,13 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .location {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
     &__heading {
         font-size: 2rem;
-        font-size: 20px;
+        text-align: center;
     }
 }
 </style>
