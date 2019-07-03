@@ -2,18 +2,23 @@
   	<div id="app">
     	<Location />
         <CurrentWeather />
+        <div class="chart-wrapper">
+            <TemperatureChart />
+        </div>
   	</div>
 </template>
 
 <script>
 import Location from './components/Location'
 import CurrentWeather from './components/CurrentWeather'
+import TemperatureChart from './components/TemperatureChart'
 
 export default {
 	name: 'app',
   	components: {
         Location,
-        CurrentWeather
+        CurrentWeather,
+        TemperatureChart
 	},
 }
 </script>
@@ -58,6 +63,15 @@ html, body {
   	@media (min-width: 576px) {
     	height: 580px;
     	width: 320px;
-  	}
+      }
+      
+      .chart-wrapper {
+          height: 200px;
+
+          canvas {
+              height: 200px !important;
+              width: 100% !important;
+          }
+      }
 }
 </style>
