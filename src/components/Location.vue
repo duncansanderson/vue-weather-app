@@ -1,5 +1,5 @@
 <template>
-    <div class="location">
+    <div class="location" v-if="locationReceived && weatherReceived">
         <h1 
             class="location__heading"
             v-if="location"
@@ -16,7 +16,9 @@ export default {
     computed: {
         ...mapState({
             coordinates: state => state.coordinates,
-            location: state => state.location
+            location: state => state.location,
+            locationReceived: state => state.locationReceived,
+            weatherReceived: state => state.weatherReceived
         })
     },
     watch: {

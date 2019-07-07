@@ -1,5 +1,5 @@
 <template>
-    <div class="current" v-if="currentWeather">
+    <div class="current" v-if="locationReceived && weatherReceived">
         <div class="current__summary">
             <div class="current__summary__icon">
                 <img :src="getImgUrl(currentWeather.icon)" :alt="currentWeather.icon">
@@ -30,7 +30,9 @@ export default {
     computed: {
         ...mapState({
             coordinates: state => state.coordinates,
-            currentWeather: state => state.currentWeather
+            currentWeather: state => state.currentWeather,
+            locationReceived: state => state.locationReceived,
+            weatherReceived: state => state.weatherReceived
         })
     },
     watch: {

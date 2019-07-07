@@ -11,7 +11,9 @@ export default new Vuex.Store({
         location: null,
         currentWeather: {},
         chartLabels: [],
-        chartData:[]
+        chartData:[],
+        locationReceived: false,
+        weatherReceived: false
     },
     mutations: {
         GET_COORDINATES(state) {
@@ -42,6 +44,7 @@ export default new Vuex.Store({
                         }
                     })
                     state.location = city
+                    state.locationReceived = true
                 })
                 .catch(error => {
                     console.log('There was an error getting the location data:', error.response)
@@ -72,6 +75,8 @@ export default new Vuex.Store({
                     })
 
                     state.chartLabels[0] = 'Now'
+
+                    state.weatherReceived = true
                 })
                 .catch(error => {
                     console.log('There was an error getting the weather data', error.response)

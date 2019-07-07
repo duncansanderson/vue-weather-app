@@ -1,25 +1,35 @@
 <template>
   	<div id="app">
-    	<Location />
+        <Loader v-if="!locationReceived || !weatherReceived" />
+        <Location />
         <CurrentWeather />
-        <div class="chart-wrapper">
+        <div class="chart-wrapper" v-if="locationReceived || weatherReceived">
             <TemperatureChart />
         </div>
   	</div>
 </template>
 
 <script>
-import Location from './components/Location'
 import CurrentWeather from './components/CurrentWeather'
+import Loader from './components/Loader'
+import Location from './components/Location'
 import TemperatureChart from './components/TemperatureChart'
+import { mapState } from 'vuex'
 
 export default {
 	name: 'app',
   	components: {
-        Location,
         CurrentWeather,
+        Loader,
+        Location,
         TemperatureChart
-	},
+    },
+    computed: {
+        ...mapState({
+            locationReceived: state => state.locationReceived,
+            weatherReceived: state => state.weatherReceived
+        })
+    },
 }
 </script>
 
@@ -60,6 +70,7 @@ html, body {
     display: grid;
     // grid-template-rows: repeat(3, 1fr);
     grid-template-rows: 22vh 1fr 200px;
+    position: relative;
   
   	@media (min-width: 576px) {
     	height: 580px;
