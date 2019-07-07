@@ -52,26 +52,27 @@ export default {
 <style lang="scss">
 .current {
     margin: 0 auto;
-    padding: 0 3rem;
+    // padding: 0 3rem;
 
     &__summary {
         align-items: center;
         display: flex;
-        height: 3rem;
+        padding: 0 1rem;
 
         &__icon {
-            margin-top: 0.3rem;
+            // margin-top: 0.3rem;
             margin-right: 0.5rem;
-            margin-left: 0.7rem;
+            // margin-left: 0.7rem;
 
             img {
-                height: 30px;
-                width: 30px;
+                height: 40px;
+                width: 40px;
             }
         }
 
         &__text {
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -80,8 +81,8 @@ export default {
         display: flex;
 
         &__now {
-            font-size: 8rem;
-            margin-right: 2.5rem;
+            font-size: 10rem;
+            margin-right: 3rem;
             position: relative;
 
             span {
@@ -95,14 +96,14 @@ export default {
             margin-bottom: 1.5rem;
 
             &__max, &__min {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 position: relative;
                 text-align: right;
 
                 span {
-                    font-size: 1rem;
-                    position: absolute;
-                    top: 0.1rem;
+                    font-size: 1.5rem;
+                    position: relative;
+                    top: -0.4rem;
                 }
             }
 

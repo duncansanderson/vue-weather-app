@@ -27,8 +27,8 @@ export default {
 * {
 	box-sizing: border-box;
 	font-family: $roboto;
-	font-weight: 300;
-	font-size: 3.25vh;
+	font-weight: 100;
+	// font-size: 3.25vh;
 }
 
 body {
@@ -58,7 +58,8 @@ html, body {
     width: 100vw;
     
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 22vh 1fr 200px;
   
   	@media (min-width: 576px) {
     	height: 580px;

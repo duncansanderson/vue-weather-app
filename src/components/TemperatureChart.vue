@@ -53,7 +53,8 @@ export default {
                 tooltips: false,
                 layout: {
                     padding: {
-                        top: 30
+                        top: 50,
+                        bottom: 20
                     }
                 },
                 legend: false,
