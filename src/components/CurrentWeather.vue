@@ -95,7 +95,7 @@ export default {
         }
 
         &__day {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
 
             &__max, &__min {
                 font-size: 2rem;
