@@ -37,6 +37,7 @@ export default new Vuex.Store({
             service
                 .getLocation(state.coordinates)
                 .then(response => {
+                    console.log(response)
                     let city = ''
                     response.data.results[0].address_components.forEach((address_component) => {
                         if (address_component.types.includes('locality') || address_component.types.includes('postal_town') && city === '') {
