@@ -57,16 +57,17 @@ html, body {
 	width: 100%;
 }
 
-// #app {
-//     // align-items: center;
-// 	background-color: $blue;
-// 	box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
-//     color: $white;
-//     // display: flex;
-//     // flex-direction: column;
-// 	height: 100vh;
-//   	overflow: hidden;
-//     width: 100vw;
+#app {
+    // align-items: center;
+	background-color: $blue;
+	box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
+    color: $white;
+    // display: flex;
+    // flex-direction: column;
+	height: 100vh;
+  	overflow: hidden;
+    width: 100vw;
+}
     
 //     display: grid;
 //     // grid-template-rows: repeat(3, 1fr);
