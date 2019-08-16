@@ -63,9 +63,10 @@ html, body {
     color: $white;
     // display: flex;
     // flex-direction: column;
-	height: 100vh;
+	// height: 100vh;
+    height: 100%;
   	overflow: hidden;
-    width: 100vw;
+    width: 100%;
     
     display: grid;
     // grid-template-rows: repeat(3, 1fr);
