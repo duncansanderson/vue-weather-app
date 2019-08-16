@@ -64,7 +64,7 @@ html, body {
     // color: $white;
     // display: flex;
     // flex-direction: column;
-	height: 100vh;
+	height: 100%;
   	// overflow: hidden;
     // width: 100vw;
 }
