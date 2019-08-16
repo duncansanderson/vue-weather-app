@@ -42,12 +42,12 @@
 	// font-size: 3.25vh;
 }
 
-// body {
-// 	align-items: center;
-// 	background: #e7e7ef;
-// 	display: flex;
-// 	justify-content: center;
-// }
+body {
+	align-items: center;
+	background: #e7e7ef;
+	display: flex;
+	justify-content: center;
+}
 
 // html, body {
 // 	font-size: 1rem;
