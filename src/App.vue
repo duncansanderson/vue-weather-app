@@ -69,7 +69,7 @@ html, body {
     
     display: grid;
     // grid-template-rows: repeat(3, 1fr);
-    grid-template-rows: 22vh 1fr 200px;
+    grid-template-rows: 25% 1fr 200px;
     position: relative;
   
   	@media (min-width: 576px) {
