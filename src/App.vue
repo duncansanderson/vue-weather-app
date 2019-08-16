@@ -59,14 +59,14 @@ html, body {
 
 #app {
     // align-items: center;
-	background-color: $blue;
-	box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
-    color: $white;
+	// background-color: $blue;
+	// box-shadow: 0 0 4vh rgba(0, 0, 0, 0.1);
+    // color: $white;
     // display: flex;
     // flex-direction: column;
 	height: 100vh;
-  	overflow: hidden;
-    width: 100vw;
+  	// overflow: hidden;
+    // width: 100vw;
 }
     
 //     display: grid;
