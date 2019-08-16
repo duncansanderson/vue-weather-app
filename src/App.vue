@@ -49,13 +49,13 @@ body {
 	justify-content: center;
 }
 
-// html, body {
-// 	font-size: 1rem;
-// 	height: 100%;
-// 	margin: 0;
-// 	padding: 0;
-// 	width: 100%;
-// }
+html, body {
+	font-size: 1rem;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
 
 // #app {
 //     // align-items: center;
