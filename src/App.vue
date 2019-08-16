@@ -35,12 +35,12 @@
 </script>
 
 <style lang="scss">
-// * {
-// 	box-sizing: border-box;
-// 	font-family: $roboto;
-// 	font-weight: 100;
-// 	// font-size: 3.25vh;
-// }
+* {
+	box-sizing: border-box;
+	font-family: $roboto;
+	font-weight: 100;
+	// font-size: 3.25vh;
+}
 
 // body {
 // 	align-items: center;
