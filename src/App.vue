@@ -1,10 +1,10 @@
 <template>
   	<div id="app">
-        <Loader v-if="!locationReceived || !weatherReceived" />
-        <Location />
-        <CurrentWeather />
+        <loader v-if="!locationReceived || !weatherReceived" />
+        <location />
+        <current-weather />
         <div class="chart-wrapper" v-if="locationReceived || weatherReceived">
-            <TemperatureChart />
+            <temperature-chart />
         </div>
   	</div>
 </template>
