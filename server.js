@@ -22,7 +22,8 @@ const app = express();
 // Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
 // a load balancer (e.g. Heroku). See further comments below
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
- 
-http.createServer(app).listen(app.get('port'), function() {
-    console.log('Express server listening on port ' + app.get('port'));
+
+const port = process.env.PORT || 5000
+http.createServer(app).listen(port, function() {
+    console.log('Express server listening on port ' + port);
 });
